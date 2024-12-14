@@ -1,0 +1,59 @@
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list-table-format {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr; /* Atur proporsi kolom */
+  align-items: center;
+  text-align: left;
+  padding: 10px 0;
+}
+
+.list-table-format.title {
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+.list-table-format p {
+  margin: 0;
+  padding: 5px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.actions {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: auto; /* Ensures buttons aren't stretched */
+}
+
+.edit-btn {
+  background-color: rgb(255, 178, 13);
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: rgb(214, 148, 6);
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: rgb(240, 52, 39);
+  color: white;
+}
